@@ -6,6 +6,7 @@ let isFlippedCard = false;
 let firstCard, secondCard;
 let lockTheGame;
 let score = 0;
+let moves = 0;
 
 // Overlay functions
 function on() {
@@ -29,6 +30,13 @@ function incrementScore() {
     score++;
     document.getElementById("score").innerText = score;
 }
+
+// Increase the moves for each attempt
+function incrementMoves() {
+    moves++;
+    document.getElementById("moves").innerText = moves;
+}
+
 
 function flipTheCard() {
     if (lockTheGame) return;
@@ -58,6 +66,8 @@ function checkTheMatch() {
         // It is not a match
         unflipTheCards();
     };
+
+    incrementMoves();
 
     if (score === 8) {
         winOn();
