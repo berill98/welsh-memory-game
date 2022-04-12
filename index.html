@@ -16,8 +16,21 @@
 
 <body>
     <header>
-        <h1>Welsh Memory Game</h1>
+        <!-- Start of Header -->
+        <div id="game-name">
+            <h1>Welsh Memory Game</h1>
+        </div>
     </header>
+
+    <!-- Start of the overlay -->
+    <div id="overlay" onclick="off()">
+        <h2 id="welcome">Welcome to the Welsh Memory Game!</h2>
+        <p id="text">Pick a card, turn it over and discover the hidden picture!<br>
+            Find all the matching pairs!</p>
+        <button type="button" id="play">PLAY!</button>
+    </div>
+
+    <!-- Start of Game Board -->
     <section id="game">
         <div class="card" data-name="village">
             <img class="card-front" src="assets/img/village.jpg" alt="A little, Welsh village">
@@ -91,7 +104,8 @@
             <img class="card-back" src="assets/img/back.jpg" alt="Map of Wales">
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

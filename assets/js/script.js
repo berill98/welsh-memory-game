@@ -1,8 +1,19 @@
+document.addEventListener('DOMContentLoaded', on());
+
 const memoryCards = document.querySelectorAll('.card');
 
 let isFlippedCard = false;
 let firstCard, secondCard;
 let lockTheGame;
+
+// overlay functions
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
 
 function flipTheCard() {
     if (lockTheGame) return;
