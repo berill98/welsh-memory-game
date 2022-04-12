@@ -4,7 +4,7 @@ let isFlippedCard = false;
 let firstCard, secondCard;
 let lockTheGame;
 
-function flipTheCard () {
+function flipTheCard() {
     if (lockTheGame) return;
     if (this === firstCard) return;
 
@@ -19,41 +19,48 @@ function flipTheCard () {
         isFlippedCard = false;
         secondCard = this;
 
-        checkTheMatch ();
+        checkTheMatch();
     }
 }
 
-function checkTheMatch () {
+function checkTheMatch() {
     if (firstCard.dataset.name === secondCard.dataset.name) {
         // it is a match
-        freezeCards ();
+        freezeCards();
     } else {
         // not a match
-        unflipTheCards ();
-    }; 
+        unflipTheCards();
+    };
 };
 
-function freezeCards () {
+function freezeCards() {
     firstCard.removeEventListener("click", flipTheCard);
     secondCard.removeEventListener("click", flipTheCard);
-    resetGameBoard ();
+    resetGameBoard();
 }
 
-function unflipTheCards () {
+function unflipTheCards() {
     lockTheGame = true;
-    setTimeout ( () => {
+    setTimeout(() => {
         firstCard.classList.remove("flipped");
         secondCard.classList.remove("flipped");
         lockTheGame = false;
-        resetGameBoard ();
+        resetGameBoard();
     }, 1000);
 }
 
-function resetGameBoard () {
+function resetGameBoard() {
     isFlippedCard = false;
     lockTheGame = false;
     firstCard = null;
     secondCard = null;
 }
+
+(function mix() {
+    memoryCards.forEach(card => {
+        let position = Math.floor(Math.random() * 16)
+        card.style.order = position;
+    });
+})();
 
 memoryCards.forEach(card => card.addEventListener("click", flipTheCard));
