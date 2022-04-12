@@ -6,6 +6,7 @@ let lockTheGame;
 
 function flipTheCard () {
     if (lockTheGame) return;
+    if (this === firstCard) return;
 
     this.classList.add('flipped');
 
@@ -35,6 +36,7 @@ function checkTheMatch () {
 function freezeCards () {
     firstCard.removeEventListener("click", flipTheCard);
     secondCard.removeEventListener("click", flipTheCard);
+    resetGameBoard ();
 }
 
 function unflipTheCards () {
@@ -43,7 +45,15 @@ function unflipTheCards () {
         firstCard.classList.remove("flipped");
         secondCard.classList.remove("flipped");
         lockTheGame = false;
+        resetGameBoard ();
     }, 1000);
+}
+
+function resetGameBoard () {
+    isFlippedCard = false;
+    lockTheGame = false;
+    firstCard = null;
+    secondCard = null;
 }
 
 memoryCards.forEach(card => card.addEventListener("click", flipTheCard));
