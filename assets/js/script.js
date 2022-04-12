@@ -5,14 +5,29 @@ const memoryCards = document.querySelectorAll('.card');
 let isFlippedCard = false;
 let firstCard, secondCard;
 let lockTheGame;
+let score = 0;
 
-// overlay functions
+// Overlay functions
 function on() {
-    document.getElementById("overlay").style.display = "block";
+    document.getElementById("start-overlay").style.display = "block";
 }
 
 function off() {
-    document.getElementById("overlay").style.display = "none";
+    document.getElementById("start-overlay").style.display = "none";
+}
+
+function winOn() {
+    document.getElementById("win-overlay").style.display = "block";
+}
+
+function winOff() {
+    document.getElementById("win-overlay").style.display = "none";
+}
+
+// Increase the score for each correct match
+function incrementScore() {
+    score++;
+    document.getElementById("score").innerText = score;
 }
 
 function flipTheCard() {
@@ -22,11 +37,11 @@ function flipTheCard() {
     this.classList.add('flipped');
 
     if (!isFlippedCard) {
-        // it means this is the first click
+        // This is the first click
         isFlippedCard = true;
         firstCard = this;
     } else {
-        // the user's second click
+        // This is the second click
         isFlippedCard = false;
         secondCard = this;
 
@@ -36,12 +51,17 @@ function flipTheCard() {
 
 function checkTheMatch() {
     if (firstCard.dataset.name === secondCard.dataset.name) {
-        // it is a match
+        // It is a match
         freezeCards();
+        incrementScore();
     } else {
-        // not a match
+        // It is not a match
         unflipTheCards();
     };
+
+    if (score === 8) {
+        winOn();
+    }
 };
 
 function freezeCards() {

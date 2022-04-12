@@ -23,11 +23,16 @@
     </header>
 
     <!-- Start of the overlay -->
-    <div id="overlay" onclick="off()">
+    <div id="start-overlay" onclick="off()">
         <h2 id="welcome">Welcome to the Welsh Memory Game!</h2>
-        <p id="text">Pick a card, turn it over and discover the hidden picture!<br>
+        <p class="text">Pick a card, turn it over and discover the hidden picture!<br>
             Find all the matching pairs!</p>
         <button type="button" id="play">PLAY!</button>
+    </div>
+    <div id="win-overlay" onclick="winOff()">
+        <h2 id="winner">Congratulations!</h2>
+        <p class="text">You've found all the pairs!</p>
+        <button type="button" id="play-again">PLAY AGAIN!</button>
     </div>
 
     <!-- Start of Game Board -->
@@ -102,6 +107,12 @@
         <div class="card" data-name="brook">
             <img class="card-front" src="assets/img/brook.jpg" alt="A brook in the mountains">
             <img class="card-back" src="assets/img/back.jpg" alt="Map of Wales">
+        </div>
+    </section>
+
+    <section id="info-area">
+        <div class="score-area">
+            <p id="score-text">Score: <span id="score">0</span></p>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.js"

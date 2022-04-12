@@ -9,11 +9,11 @@
 body {
     height: 100vh;
     background-color: #abb48e;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
 }
 
 header {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
 }
 
 #game-name {
@@ -25,7 +25,8 @@ h1 {
     color: white;
 }
 
-#overlay {
+#start-overlay,
+#win-overlay {
     position: fixed;
     display: none;
     width: 100%;
@@ -39,7 +40,8 @@ h1 {
     cursor: pointer;
 }
 
-#welcome {
+#welcome,
+#winner {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -51,7 +53,7 @@ h1 {
     text-align: center
 }
 
-#text {
+.text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -62,7 +64,8 @@ h1 {
     text-align: center;
 }
 
-#play {
+#play,
+#play-again {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -118,4 +121,13 @@ h1 {
 
 .card-front {
     transform: rotateY(180deg);
+}
+
+.score-area {
+    padding: 10px;
+}
+
+#score-text {
+    color: white;
+    font-size: 140%;
 }
