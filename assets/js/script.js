@@ -75,8 +75,8 @@ function checkTheMatch() {
 };
 
 function freezeCards() {
-    firstCard.removeEventListener("click", flipTheCard);
-    secondCard.removeEventListener("click", flipTheCard);
+    firstCard.classList.add("disable");
+    secondCard.classList.add("disable");
     resetGameBoard();
 }
 
