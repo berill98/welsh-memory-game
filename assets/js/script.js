@@ -7,6 +7,7 @@ let firstCard, secondCard;
 let lockTheGame;
 let score = 0;
 let moves = 0;
+let winOverlay = document.getElementById("win-overlay");
 
 // Overlay functions
 function on() {
@@ -18,11 +19,11 @@ function off() {
 }
 
 function winOn() {
-    document.getElementById("win-overlay").style.display = "block";
+    winOverlay.style.display = "block";
 }
 
 function winOff() {
-    document.getElementById("win-overlay").style.display = "none";
+    winOverlay.style.display = "none";
 }
 
 // Increase the score for each correct match
