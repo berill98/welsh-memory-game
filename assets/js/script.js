@@ -104,4 +104,18 @@ function resetGameBoard() {
     });
 })();
 
+winOverlay.addEventListener("click", function() {
+    resetGame();
+});
+
+function resetGame() {
+    score = 0;
+    moves = 0;
+    document.getElementById("moves").innerText = moves;
+    document.getElementById("score").innerText = score;
+    memoryCards.forEach(card => { 
+        card.classList.remove("flipped", "disable");
+    });
+}
+
 memoryCards.forEach(card => card.addEventListener("click", flipTheCard));
