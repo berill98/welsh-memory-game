@@ -40,7 +40,6 @@ function incrementMoves() {
     document.getElementById("moves").innerText = moves;
 }
 
-
 function flipTheCard() {
     if (lockTheGame) return;
     if (this === firstCard) return;
@@ -68,14 +67,14 @@ function checkTheMatch() {
     } else {
         // It is not a match
         unflipTheCards();
-    };
+    }
 
     incrementMoves();
 
     if (score === 8) {
         winOn();
     }
-};
+}
 
 function freezeCards() {
     firstCard.classList.add("disable");
@@ -102,7 +101,7 @@ function resetGameBoard() {
 
 (function mix() {
     memoryCards.forEach(card => {
-        let position = Math.floor(Math.random() * 16)
+        let position = Math.floor(Math.random() * 16);
         card.style.order = position;
     });
 })();
