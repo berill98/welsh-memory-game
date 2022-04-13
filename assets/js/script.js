@@ -1,3 +1,5 @@
+/* jshint esversion: 8, jquery: true */
+
 document.addEventListener('DOMContentLoaded', on());
 
 const memoryCards = document.querySelectorAll('.card');
