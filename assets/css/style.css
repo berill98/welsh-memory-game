@@ -127,3 +127,7 @@ h1 {
     color: white;
     font-size: 140%;
 }
+
+.disable {
+    pointer-events: none;
+}
