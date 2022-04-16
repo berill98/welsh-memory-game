@@ -10,6 +10,7 @@ let lockTheGame;
 let score = 0;
 let moves = 0;
 let winOverlay = document.getElementById("win-overlay");
+let Wintext = document.getElementById("win-text");
 
 // Overlay functions
 function on() {
@@ -79,6 +80,15 @@ function checkTheMatch() {
 
     if (score === 8) {
         winOn();
+
+        document.getElementById("win-moves").innerText = moves;
+        if (moves === 8) {
+            Wintext.innerHTML = ["Flawless! Congratulations!"];
+        } else if (moves >= 9 && moves <= 13) {
+            Wintext.innerHTML = ["Not bad! You have a very good memory!"];
+        } else {
+            Wintext.innerHTML = ["What took so long? You need to practice!"];
+        }
     }
 }
 // Freeze the card in flipped form
