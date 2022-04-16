@@ -18,6 +18,7 @@ function on() {
 
 function off() {
     document.getElementById("start-overlay").style.display = "none";
+    mix();
 }
 
 function winOn() {
@@ -27,6 +28,10 @@ function winOn() {
 function winOff() {
     winOverlay.style.display = "none";
 }
+
+winOverlay.addEventListener("click", function() {
+    resetGame();
+});
 
 // Increase the score for each correct match
 function incrementScore() {
@@ -40,6 +45,7 @@ function incrementMoves() {
     document.getElementById("moves").innerText = moves;
 }
 
+// Flip the cards
 function flipTheCard() {
     if (lockTheGame) return;
     if (this === firstCard) return;
@@ -58,7 +64,7 @@ function flipTheCard() {
         checkTheMatch();
     }
 }
-
+// Check if it is a match or not
 function checkTheMatch() {
     if (firstCard.dataset.name === secondCard.dataset.name) {
         // It is a match
@@ -75,13 +81,14 @@ function checkTheMatch() {
         winOn();
     }
 }
-
+// Freeze the card in flipped form
 function freezeCards() {
     firstCard.classList.add("disable");
     secondCard.classList.add("disable");
     resetGameBoard();
 }
 
+// Unflip the card
 function unflipTheCards() {
     lockTheGame = true;
     setTimeout(() => {
@@ -92,6 +99,7 @@ function unflipTheCards() {
     }, 1000);
 }
 
+// Reset gameboard for the next move
 function resetGameBoard() {
     isFlippedCard = false;
     lockTheGame = false;
@@ -99,17 +107,15 @@ function resetGameBoard() {
     secondCard = null;
 }
 
-(function mix() {
+// Mix the cards
+function mix() {
     memoryCards.forEach(card => {
         let position = Math.floor(Math.random() * 16);
         card.style.order = position;
     });
-})();
+};
 
-winOverlay.addEventListener("click", function() {
-    resetGame();
-});
-
+// Start a new game
 function resetGame() {
     score = 0;
     moves = 0;
@@ -118,6 +124,8 @@ function resetGame() {
     memoryCards.forEach(card => { 
         card.classList.remove("flipped", "disable");
     });
+    mix();
 }
 
+// Event listener for the cards
 memoryCards.forEach(card => card.addEventListener("click", flipTheCard));
