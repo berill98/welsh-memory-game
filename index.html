@@ -15,25 +15,25 @@
 </head>
 
 <body>
+    <!-- Start of Header -->
     <header>
-        <!-- Start of Header -->
         <div id="game-name">
             <h1>Welsh Memory Game</h1>
         </div>
     </header>
 
-    <!-- Start of the overlay -->
-    <div id="start-overlay" onclick="off()">
+    <!-- Start of the overlays -->
+    <aside id="start-overlay" onclick="off()">
         <h2 id="welcome">Welcome to the Welsh Memory Game!</h2>
         <p class="text">Pick a card, turn it over and discover the hidden picture!<br>
             Find all the matching pairs!</p>
         <button type="button" id="play">PLAY!</button>
-    </div>
-    <div id="win-overlay" onclick="winOff()">
+    </aside>
+    <aside id="win-overlay" onclick="winOff()">
         <h2 id="winner">Congratulations!</h2>
         <p class="text">You've found all the pairs!</p>
         <button type="button" id="play-again">PLAY AGAIN!</button>
-    </div>
+    </aside>
 
     <!-- Start of Game Board -->
     <section id="game">
@@ -116,8 +116,14 @@
             <p id="moves-text">Moves: <span id="moves">0</span></p>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Start of Footer -->
+    <footer>
+        <div id="github">
+            <a href="https://github.com/berill98" target="_blank">
+                <img id="cat" src="assets/img/github.png" alt="Github icon">
+            </a>
+        </div>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 
