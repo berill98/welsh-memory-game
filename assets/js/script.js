@@ -30,7 +30,7 @@ function winOff() {
     winOverlay.style.display = "none";
 }
 
-winOverlay.addEventListener("click", function() {
+winOverlay.addEventListener("click", function () {
     resetGame();
 });
 
@@ -79,8 +79,10 @@ function checkTheMatch() {
     incrementMoves();
 
     if (score === 8) {
+
         winOn();
 
+        // Winning message variations
         document.getElementById("win-moves").innerText = moves;
         if (moves === 8) {
             Wintext.innerHTML = ["Flawless! Congratulations!"];
@@ -131,7 +133,7 @@ function resetGame() {
     moves = 0;
     document.getElementById("moves").innerText = moves;
     document.getElementById("score").innerText = score;
-    memoryCards.forEach(card => { 
+    memoryCards.forEach(card => {
         card.classList.remove("flipped", "disable");
     });
     mix();
