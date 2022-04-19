@@ -2,7 +2,17 @@
 
 ## The goal for this project
 ## Site Owner Goals
+
+- To provide  an amusing game for the user.
+- To present the user with a website that is fully responsive and gives the mood of Wales through the use of appropriate colors and imagery.
+
 ## User stories
+
+- As an user I want to understand the main purpose of the website.
+- As an user I want to to enjoy a simple memory card game with visually appealing format.
+- As an user I want to view and match photos of Wales.
+- As an user I want to play a game that doesn't take too long but has a challenge. 
+- As an user I want to be able to compete with my friends by trying to beat the others moves's.
 
 ## UX
 ### Fonts
@@ -12,7 +22,7 @@
 
 ## Features
 ### Existing Features
-### Features left to Implement
+### Features left to implement
 
 ## Technologies used
 ### Languages
