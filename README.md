@@ -20,6 +20,8 @@
 
 ## Testing
 
+To view all testing documentation please refer to [TESTING.md](TESTING.md).
+
 ## Deployment
 
 The site was deployed to GitHub Pages. The steps to deploy are as follows: 
@@ -40,9 +42,13 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/berill98/welsh-memory-game)
 
 ## Credits
-### Content
+
 ### Media
 ### Resources used
+
+### Setup and text in README.md
+
+I have used my own README.md file from MS1 as inspiration for this README.md.
 
 ## Acknowledgments
 
