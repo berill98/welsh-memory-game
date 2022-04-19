@@ -1,6 +1,9 @@
 # Welsh Memory Game
 
 ## The goal for this project
+
+The Welsh Memory Game is a card memory game that tests the user's memory in a fun way. The goal is to match all pairs of identical photos with the least amount of moves. The photos on the cards try to give a taste of the life in Wales.
+
 ## Site Owner Goals
 
 - To provide  an amusing game for the user.
