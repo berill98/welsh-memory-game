@@ -64,3 +64,17 @@ Mozzilla Firefox
 There are no unfixed bugs that I am aware of.
 
 ## User story testing
+
+- As an user I want to understand the main purpose of the website.
+
+![Start](docs/testing_images/start.png)
+
+- As an user I want to to enjoy a simple memory card game with visually appealing format.
+
+- As an user I want to view and match photos of Wales.
+
+![Gameboard](docs/testing_images/game.png)
+
+- As an user I want to be able to compete with my friends by trying to beat the others moves's.
+
+![Moves](docs/testing_images/moves.png)
