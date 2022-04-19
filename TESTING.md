@@ -20,6 +20,25 @@
   ![Accessibility](docs/testing_images/accessibility.png)
 
 ## Responsiveness Testing
+
+- The site was tested on various devices such as desktop, laptops and mobiles to ensure responsiveness. The website performed as intended. The responsive design was also checked using Chrome Developer Tools across multiple devices.
+
+<details><summary><b>Responsiveness testing</b> (click to expand)</summary>
+
+Desktop view
+
+![Desktop size](docs/testing_images/googlechrome_large.png)
+
+Tablet view
+
+![Tablet size](docs/testing_images/microsoftedge_medium.png)
+
+Mobile view
+
+![Mobile size](docs/testing_images/mozzillafirefox_small.png)
+
+</details>
+
 ## Browser Testing
 ## Unfixed Bugs
 ## User story testing
