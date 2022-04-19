@@ -40,5 +40,27 @@ Mobile view
 </details>
 
 ## Browser Testing
+
+- The site was tested on different browsers (Google Chrome, Firefox, Microsoft Edge) without issues.
+
+<details><summary><b>Browser testing</b> (click to expand)</summary>
+
+Google Chrome
+
+![Google Chrome](docs/testing_images/googlechrome_large.png)
+
+Microsoft Edge
+
+![Microsoft Edge](docs/testing_images/microsoftedge_medium.png)
+
+Mozzilla Firefox
+
+![Mozzilla Firefox](docs/testing_images/mozzillafirefox_small.png)
+
+</details>
+
 ## Unfixed Bugs
+
+There are no unfixed bugs that I am aware of.
+
 ## User story testing
