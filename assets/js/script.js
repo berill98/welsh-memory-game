@@ -13,19 +13,24 @@ let winOverlay = document.getElementById("win-overlay");
 let Wintext = document.getElementById("win-text");
 
 // Overlay functions
+
+// Turn on the welcome overlay
 function on() {
     document.getElementById("start-overlay").style.display = "block";
 }
 
+// Turn off the welcom overlay
 function off() {
     document.getElementById("start-overlay").style.display = "none";
     mix();
 }
 
+// Turn on the winner overlay
 function winOn() {
     winOverlay.style.display = "block";
 }
 
+// Turn off the winner overlay
 function winOff() {
     winOverlay.style.display = "none";
 }
@@ -78,6 +83,7 @@ function checkTheMatch() {
 
     incrementMoves();
 
+    // This happens when the score is 8
     if (score === 8) {
 
         winOn();
