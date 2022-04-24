@@ -1,4 +1,4 @@
-/* jshint esversion: 8, jquery: true */
+/* jshint esversion: 8 */
 
 document.addEventListener('DOMContentLoaded', on());
 
@@ -85,11 +85,11 @@ function checkTheMatch() {
         // Winning message variations
         document.getElementById("win-moves").innerText = moves;
         if (moves === 8) {
-            Wintext.innerHTML = ["Flawless! Congratulations!"];
+            Wintext.innerHTML = "Flawless! Congratulations!";
         } else if (moves >= 9 && moves <= 13) {
-            Wintext.innerHTML = ["Not bad! You have a very good memory!"];
+            Wintext.innerHTML = "Not bad! You have a very good memory!";
         } else {
-            Wintext.innerHTML = ["What took so long? You need to practice!"];
+            Wintext.innerHTML = "What took so long? You need to practice!";
         }
     }
 }
@@ -125,7 +125,7 @@ function mix() {
         let position = Math.floor(Math.random() * 16);
         card.style.order = position;
     });
-};
+}
 
 // Start a new game
 function resetGame() {
