@@ -101,10 +101,11 @@ The Welsh Memory Game is a card memory game that tests the user's memory in a fu
 - [GitHub](https://github.com/) - Used for storing code securely online.
 - [GitHub Pages](https://pages.github.com/) - Used for site hosting.
 
-
 ## Testing
 
 To view all testing documentation please refer to [TESTING.md](TESTING.md).
+
+I fully acknowledge and understand that, in a real-world scenario, an extensive set of Jest tests would be more comprehensive.
 
 ## Deployment
 
@@ -128,7 +129,25 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 ## Credits
 
 ### Media
+
+- All of the photos on the cards are from the same photographer, Lina Kivaka. I used her photos because they are really beautiful and they express the real Welsh atmosphere.
+
+| Media  | Photographer  | Link |
+| :------------ |:---------------:| -----:|
+| Brook | Lina Kivaka | [Pexels](https://www.pexels.com/hu-hu/foto/termeszet-vizeses-sziklas-hegyseg-termeszetfotozas-5582995/) |
+| House | Lina Kivaka | [Pexels](https://www.pexels.com/hu-hu/foto/haz-epiteszet-kohaz-fuggoleges-loves-5582999/) |
+| Lake | Lina Kivaka | [Pexels](https://www.pexels.com/hu-hu/foto/termeszet-hegy-to-zold-5582921/) |
+| Mailbox | Lina Kivaka | [Pexels](https://www.pexels.com/hu-hu/foto/tajkep-hegyek-mezo-fak-5582986/) |
+| Mountain | Lina Kivaka | [Pexels](https://www.pexels.com/hu-hu/foto/termeszet-felhos-hegy-to-5582928/) |
+| Path| Lina Kivaka | [Pexels](https://www.pexels.com/hu-hu/foto/hegyek-termeszet-videki-taj-zold-5583021/) |
+| Sheep | Lina Kivaka | [Pexels](https://www.pexels.com/hu-hu/foto/videki-taj-kodos-juh-hosszu-loves-5582954/) |
+| Village | Lina Kivaka | [Pexels](https://www.pexels.com/hu-hu/foto/hegyek-termeszet-videki-taj-zold-5582926/) |
+
+
 ### Resources used
+
+- Inspiration for the overlay - [W3 Schools](https://www.w3schools.com/howto/howto_css_overlay.asp)
+- Inspiration for the Memory Game - [freeCodeCamp.org](https://www.youtube.com/watch?v=ZniVgo8U7ek)
 
 ### Setup and text in README.md
 
