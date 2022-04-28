@@ -42,8 +42,45 @@ The Welsh Memory Game is a card memory game that tests the user's memory in a fu
 </details>
 
 ## Features
+
 ### Existing Features
+
+- __Welcome modul__
+
+  - This section will allow the user to read the most important information about the Welsh Memory Game.
+  - It also contains a call to action button which helps the user to start the game.
+
+  ![Welcome](docs/readme_images/welcome.png)
+
+- __Game board__
+
+  - The game board contains 16 cards with the photos of Wales and allows the user to flip the cards and find the matching pairs.
+
+  ![Game board](docs/testing_images/game.png)
+
+- __Info area__
+
+- This area shows the scores and the moves to the user during the game.
+
+ ![Info area](docs/readme_images/infoandfooter.png)
+
+- __GitHub icon__
+
+- The footer includes an icon with a link to the GitHub profile of the developer. The link will open to a new tab to allow easy navigation for the user. These link encourage the user to check the other project from the developer.
+
+ ![GitHub icon](docs/readme_images/infoandfooter.png)
+
+- __Result messages__
+
+- The result messages allows the user to know how many moves did it take to find the pairs.
+- This section also contains a call to action button which helps the user to start a new game.
+
+ ![Result message](docs/readme_images/result.png)
+
 ### Features left to implement
+
+- Creating a timer for the game.
+- Adding background music to the game.
 
 ## Technologies used
 ### Languages
