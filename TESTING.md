@@ -13,6 +13,9 @@
   ![CSS Validation](docs/testing_images/css_validation.png)
 
 - Javascript
+  - No errors were found when passing through the official [JS Hint validator](https://jshint.com/).
+
+  ![Javascript Validation](docs/testing_images/js_validation.png)
 
 - Accessibility
   - The site achieved a Lighthouse accessibility score of 95% which confirms that the website is accessible.
