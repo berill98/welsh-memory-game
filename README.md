@@ -83,8 +83,24 @@ The Welsh Memory Game is a card memory game that tests the user's memory in a fu
 - Adding background music to the game.
 
 ## Technologies used
+
 ### Languages
+
+- HTML5
+- CSS
+- Javascript
+
 ### Frameworks, Tools and Libraries
+
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and testing for example the  responsiveness and appearance.
+- [Google Fonts](https://fonts.google.com/) - Used to import font to the website.
+- [Pho.to](https://funny.pho.to/old-photo-effect/) - Used for the old photo effect for the cards's backface.
+- [W3C](https://www.w3.org/) - Used for validation.
+- Git - Used for version control.
+- [Gitpod](https://gitpod.io/) - Used as a cloud-based IDE.
+- [GitHub](https://github.com/) - Used for storing code securely online.
+- [GitHub Pages](https://pages.github.com/) - Used for site hosting.
+
 
 ## Testing
 
