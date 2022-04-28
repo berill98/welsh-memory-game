@@ -18,10 +18,28 @@ The Welsh Memory Game is a card memory game that tests the user's memory in a fu
 - As an user I want to be able to compete with my friends by trying to beat the others moves's.
 
 ## UX
+
 ### Fonts
+
+- I have used Google Fonts to find the font that suits best to the feel of the website. I have used [Cinzel Decorative](https://fonts.google.com/specimen/Cinzel+Decorative) for the website. I used Cursive as backup font, in case for any reason the main font isn't able to load correctly.
+
 ### Icons
+
+- The icon in the footer were taken from [GitHub](https://github.com/logos).
+
 ### Colors and images
+
+- The main colours on the website are green, white, and brown. I choosed these colours to refer to the wonderful natural treasures of Wales. The white text has a nice contrast with the green background making it easy to read.
+- The photos on the cards are one of the most important parts of the website, they have similar vibes, they give a taste of the beautiful Wales.
+- The backface of the cards is the map of Wales with an old photo effect. I edited this picture myself. 
+
 ### Wireframes
+
+<details><summary><b>Wireframes</b> (click to expand)</summary>
+
+![Hand-drawn wireframe](docs/readme_images/wireframe.jpg)
+
+</details>
 
 ## Features
 ### Existing Features
