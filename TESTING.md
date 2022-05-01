@@ -81,3 +81,11 @@ There are no unfixed bugs that I am aware of.
 - As an user I want to be able to compete with my friends by trying to beat the others moves's.
 
 ![Moves](docs/testing_images/moves.png)
+
+## JEST Testing
+
+I fully acknowledge and understand that, in a real-world scenario, an extensive set of Jest tests would be more comprehensive.
+Comprehensive automated test coverage is not required for this project, just enough to demonstrate knowledge of how automated software testing works. In the future I would like to set-up automated testing for all functions.
+At the moment I have included minimal testing to demonstrate understanding of Jest.
+
+![JEST](docs/testing_images/jest_test.png)
