@@ -20,7 +20,7 @@ beforeAll(() => {
     let fileContents = fs.readFileSync("index.html", "utf-8");
     document.open();
     document.write(fileContents);
-    document.close()
+    document.close();
 
     resetGameBoard = require("../script.js").resetGameBoard;
     lockTheGame = require("../script.js").lockTheGame;
@@ -42,12 +42,12 @@ describe("Ensure incrementMoves function works correctly", () => {
 
     test("the number of moves increased", () => {
         incrementMoves();
-        expect(document.getElementById("moves").innerText).toBe(1)
+        expect(document.getElementById("moves").innerText).toBe(1);
     });
 
     test("the number of moves increased again", () => {
         incrementMoves();
-        expect(document.getElementById("moves").innerText).toBe(2)
+        expect(document.getElementById("moves").innerText).toBe(2);
     });
 
     test("the number of moves is zero again", () => {
@@ -65,12 +65,12 @@ describe("Ensure incrementScore function works correctly", () => {
 
     test("score increased", () => {
         incrementScore();
-        expect(document.getElementById("score").innerText).toBe(1)
+        expect(document.getElementById("score").innerText).toBe(1);
     });
 
     test("score increased again", () => {
         incrementScore();
-        expect(document.getElementById("score").innerText).toBe(2)
+        expect(document.getElementById("score").innerText).toBe(2);
     });
 
     test("score is zero again", () => {
