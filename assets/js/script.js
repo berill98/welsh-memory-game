@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', on());
 const memoryCards = document.querySelectorAll('.card');
 
 let isFlippedCard = false;
-let firstCard, secondCard;
-let lockTheGame;
+let firstCard = null; 
+let secondCard = null;
+let lockTheGame = false;
 let score = 0;
 let moves = 0;
 let winOverlay = document.getElementById("win-overlay");
@@ -19,7 +20,7 @@ function on() {
     document.getElementById("start-overlay").style.display = "block";
 }
 
-// Turn off the welcom overlay
+// Turn off the welcome overlay
 function off() {
     document.getElementById("start-overlay").style.display = "none";
     mix();
@@ -119,10 +120,10 @@ function unflipTheCards() {
 
 // Reset gameboard for the next move
 function resetGameBoard() {
-    isFlippedCard = false;
-    lockTheGame = false;
-    firstCard = null;
-    secondCard = null;
+    isFlippedCard = false, 
+    lockTheGame = false,
+    firstCard = null,
+    secondCard = null
 }
 
 // Mix the cards
@@ -147,3 +148,16 @@ function resetGame() {
 
 // Event listener for the cards
 memoryCards.forEach(card => card.addEventListener("click", flipTheCard));
+
+module.exports = {
+    resetGameBoard,
+    isFlippedCard,
+    lockTheGame,
+    firstCard,
+    secondCard,
+    resetGame,
+    incrementMoves,
+    moves,
+    incrementScore,
+    score,
+};
