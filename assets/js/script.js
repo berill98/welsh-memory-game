@@ -120,10 +120,10 @@ function unflipTheCards() {
 
 // Reset gameboard for the next move
 function resetGameBoard() {
-    isFlippedCard = false, 
-    lockTheGame = false,
-    firstCard = null,
-    secondCard = null
+    isFlippedCard = false; 
+    lockTheGame = false;
+    firstCard = null;
+    secondCard = null;
 }
 
 // Mix the cards
